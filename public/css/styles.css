@@ -1,0 +1,202 @@
+body{
+	background-color: #f4f4f4;
+	color: #555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: 0;
+	}
+
+.containerr{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.minimum-height{
+	min-height: 500px;
+}
+
+#main_header{
+	background-color: coral;
+	color: #fff;
+}
+
+#navbar{
+	background-color: #333;
+	color: #fff;
+	text-align: right;
+}
+
+#navbar ul{
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li{
+	display: inline;
+}
+
+#navbar a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
+}
+
+#showcase{
+	background-image: url('..images/showcase.jpg');
+	background-color: coral;
+	background-position: center right;
+	min-height: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#showcase h1{
+	/*color: #fff;*/
+	font-size: 40px;
+	line-height: 1.6em;
+	padding-top: 30px;
+}
+
+#sidebar{
+	float: right;
+	width: 30%;
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#main_area{
+	float: left;
+	width: 70%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+
+.add-customer-form{
+	margin: auto;
+	width: 40%;
+}
+
+.add-customer-form h3{
+	text-align: center;
+	font-weight: 800;
+}
+
+.add-customer-form form{
+	width: 100%;
+}
+
+.add-customer-form div{
+	width: 100%;
+}
+
+.add-customer-form div input[type="text"]{
+	width: 90%;
+	padding: 15px;
+	outline: none;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.add-customer-form div input[type="email"]{
+	width: 90%;
+	padding: 15px;
+	outline: none;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.add-customer-form form button{
+	margin: auto;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	background-color: coral;
+	color: #fff;
+	font-weight: bold;
+	padding: 12px;
+}
+
+.add-customer-form form button:hover{
+	margin: auto;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	background-color: inherit;
+	border-bottom: 2px solid coral;
+	color: coral;
+	font-weight: bold;
+	padding: 12px;
+}
+
+.customer-names{
+	width: 50%;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.customer-emails{
+	width: 50%;
+	float: right;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.customer-names h4 {
+	text-align: center;
+}
+
+.customer-emails h4 {
+	text-align: center;
+}
+
+.message{
+	color:coral;
+	animation:1s blink linear;
+	transition:.5s all;
+	margin-bottom: 30px;
+}
+
+@keyframes blink{
+	0%{
+		opacity:0;
+		color: purple;
+	}
+	30%{
+		opacity:0.3;
+		color: #4F000B;
+	}
+	65%{
+		opacity:0.7;
+		color: ##F5EE9E;
+	}
+	100%{
+		opacity:1;
+		color: #5CA4A9;
+	}
+}
+#main_footer{
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+@media(max-width:600px){
+	#main_area{
+		width: 100%;
+		float: none;
+	}
+	#sidebar{
+		width: 100%;
+		float: none;
+	}
+}
